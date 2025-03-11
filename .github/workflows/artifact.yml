@@ -18,6 +18,8 @@ jobs:
       with:
         name: hello-artifact
         path: hello.txt
+    - name: View directory
+      run: ls -la
   download:
     needs: build
     runs-on: ubuntu-latest
