@@ -17,7 +17,8 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: hello-artifact
-        path: hello.txt
+        path: ./artifacts/hello.txt
+
     - name: View directory
       run: ls -la
   download:
